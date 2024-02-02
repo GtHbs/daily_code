@@ -19,7 +19,7 @@ import java.util.Objects;
 import java.util.StringTokenizer;
 
 /**
- * @author: Kerwinnli
+ * @author: lizhao
  * @date: 2024/1/31 14:50
  */
 @Service
@@ -51,9 +51,9 @@ public class JsonWebTokenService {
     }
 
 
-    public String generate(Map<String, Object> cliams) {
+    public String generate(Map<String, Object> claims) {
         String headerPart = generateHeaderPart();
-        String payloadPart = generatePayloadPart(cliams);
+        String payloadPart = generatePayloadPart(claims);
         String signaturePart = generateSignaturePart(headerPart, payloadPart);
         return headerPart + loginConfigurationParam.getDot() + payloadPart + loginConfigurationParam.getDot() + signaturePart;
     }

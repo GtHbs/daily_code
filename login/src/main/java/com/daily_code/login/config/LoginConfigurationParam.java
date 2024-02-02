@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: Kerwinnli
+ * @author: lizhao
  * @date: 2024/1/31 14:46
  */
 @Data
